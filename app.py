@@ -70,7 +70,7 @@ def create_resource(current_user):
     data = request.json
     
     resource = Resource(
-        title=data['title'],
+        title=data['name'],
         description=data['description'],
         category=data['category'],
         address=data.get('address', ''),
